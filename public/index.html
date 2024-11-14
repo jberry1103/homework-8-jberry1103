@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style> 
+        #weather{
+            text-align: center;
+        }
+        form {
+                    font-size: 25px;
+        }
+        input {
+            width: 200px;
+            font-size: 20px;
+            height: 35px;
+        }
+        button {
+            width: 150px;
+            font-size: 20px;
+            height: 35px;
+        }
+        form {
+            font-size: 25px;
+        }
+        input {
+            width: 200px;
+            font-size: 20px;
+            height: 35px;
+            border-radius: 10px;
+            border: 3px solid black;
+            background-color: white;
+        }
+        button {
+            width: 150px;
+            font-size: 20px;
+            height: 35px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 10px;
+        }
+                
+        h2 {
+           font-size: 40px;
+        }
+                
+        p {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body id="weather">
+    <h1>Weather Dashboard</h1>
+    <form action="/weather" method="GET">
+        <input type="text" id="city" name="city" placeholder="Enter City" pattern="[A-Za-z\s]+" required title="City name should only contain letters and spaces.">
+        <input type="text" id="state" name="state" placeholder="Enter State (e.g., WA)" pattern="[A-Za-z]{2}" required title="State should be a 2-letter abbreviation (e.g., 'WA')">
+
+        <button type="submit">Get Weather</button>
+    </form>
+</body>
+</html>
